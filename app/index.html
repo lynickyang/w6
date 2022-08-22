@@ -1,0 +1,174 @@
+---
+title: w5-lv1-嗶嗶羊
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<div class="container-xxl d-flex flex-column justify-content-between ">
+  <div class="up_wrap"> <!--上面選單和中間內容的恇-->
+    <div class="title_wrap mt-5 d-flex justify-content-between"><!--上面選單恇左右靠-->
+      <div class="lef d-flex">
+        <h2 class="me-5  fw-bold">Assignment</h2>
+        <div class="dropdown">
+          <button class="fw-bold btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            All Courses
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right d-flex">
+        <a href="#"><span class="material-icons me-3">search</span></a>
+        <a href=""><span class="material-icons">notifications_active</span></a>
+      </div>
+    </div>
+
+            <!-- 中間區塊 -->
+      <div class="row mt-4">
+        <div class="col-5">
+          <div class="listgroup">
+            <div class="dropdown">
+              <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                All (4)
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+
+            <div class="list-group ">
+              <a href="#" class="bg-light text-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <small class="mb-1">Chapter Assignment 2</small>
+                  <small class="fw-bold">4 hrs ago</small>
+                </div>
+                <div class="d-flex w-100 justify-content-between">
+                  <h6 class="mb-1 fs-5 fw-bold">Please check this file…</h6>
+                  <small>Emily Wang</small>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <small class="mb-1">Chapter Assignment 1</small>
+                  <small class="fw-bold">12 hrs ago</small>
+                </div>
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1 fs-5 fw-bold">Please check this file…</h5>
+                  <small>DavidXu</small>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <small class="mb-1">Final Assignment</small>
+                  <small class="fw-bold">10 hrs ago</small>
+                </div>
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1 fs-5 fw-bold">Have a problem with this…</h5>
+                  <small>Tony Wei</small>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <small class="mb-1">Final Assignment</small>
+                  <small class="fw-bold">19 hrs ago</small>
+                </div>
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1 fs-5 fw-bold">Did I do it right?</h5>
+                  <small>Christina Lin</small>
+                </div>
+              </a>
+            </div>       
+          </div>
+          
+        </div>
+        <div class="col-7">
+          <div class="carobject">
+            <h6 class="text-end mb-3">2 comments</h6>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-11">
+                    <small>Chapter Assignment 2 / HTML&CSS</small>
+                    <h6 class="fw-bold">Please check this file for me, thanks!</h6>
+                  </div>
+                  <div class="col-1">
+                    <a href=""><span class="material-icons text-end ">more_vert</span></a>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="card-body">
+                <!-- 內容 -->
+                <blockquote class="blockquote mb-0">
+                  <!-- 第一個Media object -->
+                  <div class="d-flex ">
+                    <div class="flex-shrink-0">
+                      <img class="photosize" src="./assets/images/photo-1504051771394-dd2e66b2e08f.webp" >
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <a href=""><h5 class="fs-5 fw-bold mb-0">Emily Wang</h5></a>
+                      <h6>10:38 AM (4 hours ago)</h6>
+                    </div>
+                  </div>
+                  <div class="border-bottom pb-3">
+                    <p class="fs-6 ms-5">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the img ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                    <button class="ms-5 d-flex rounded border border-dark">
+                      <span class="material-icons text-vertical fs-3 ">attachment</span>
+                      <h4>HW-2-David.zip</h4>
+                    </button>
+                  </div>
+                  <!-- 第二個Media object -->
+                  <div class="d-flex mt-3 justify-content-between">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img class="photosize" src="./assets/images/photo-1522069394066-326005dc26b2.webp" alt="...">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="fs-5 fw-bold mb-0">Andy Chen (You)</h5>
+                        <h6>13:24 AM (1 hours ago)</h6>
+                      </div>
+                    </div>
+                    <div class="icon">
+                      <a href=""><span class="material-icons me-4">star_border</span></a>
+                      <a href=""><span class="material-icons me-4">edit</span></a>
+                    </div>
+                  </div>
+                  <div class="pb-1 fs-6 ms-5">
+                    <p >Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p> 
+                    <p>You can: </p>
+                    <p>• adjust the <span class="span_green">vertical-align </span> of the image to position it elsewhere (e.g. the <span class="span_green">middle</span> ) or</p>
+                    <p>• change the <span class="span_green">display</span> so it isn’t inline.</p>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部區塊 -->
+  <div class="row justify-content-between mb-5">  <!-- 格線系統產生留白 -->
+    <div class="col-4">  <!-- 留白區塊 -->
+    </div>
+    <div class="col-8 d-flex justify-content-between">    <!-- 底部區塊左右分開 -->
+      <div class="down_img d-flex">
+        <a href=""><span class="material-icons me-4">arrow_back_ios</span></a>
+        <a href=""><span class="material-icons">arrow_forward_ios</span></a>
+      </div>
+      <div class="down_btn">
+        <button type="button" class="btn btn-outline-success me-3">Mark as read</button>
+        <button type="button" class="btn btn-success">Reply</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

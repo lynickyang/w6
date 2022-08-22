@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  </head>
+
+  <body>
+  <div class="d-flex">
+    <div class="layoutnav   bg-light d-flex flex-column justify-content-between">
+      <div>    
+        <img class="mt-5 mb-5" src="./assets/images/logo-ANSWER.svg" alt="">  
+        <ul class="nav flex-column fw-bold ">
+          <li class="nav-item d-flex ">
+            <span class="material-icons">assessment</span>
+            <a class="nav-link active" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item d-flex">
+            <span class="material-icons">question_answer</span>
+            <a class="nav-link" href="#">Question</a>
+          </li>
+          <li class="nav-item d-flex">
+            <span class="material-icons text-success">assignment</span>
+            <a class="nav-link" href="#">Assignment</a>
+          </li>
+          <li class="nav-item d-flex">
+            <span class="material-icons">video_library</span>
+            <a class="nav-link" href="#">Course</a>
+          </li>
+          <li class="nav-item d-flex">
+            <span class="material-icons">supervisor_account</span>
+            <a class="nav-link" href="#">Admin</a>
+          </li>
+          <li class="nav-item d-flex">
+            <span class="material-icons">settings</span>
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+        </ul>
+      </div>
+      <div class="user d-flex mb-5">
+        <div class="user_photo me-2"></div>
+        <div class="info">
+          <a href=""><h6 class="fs-6 mb-0 fw-bold">Andy Chen</h6></a>
+          <small>andy0401@mail.com</small>
+        </div>
+      </div>
+    </div>
+
+    <%- contents %>
+  </div>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
