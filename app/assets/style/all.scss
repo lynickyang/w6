@@ -1,6 +1,14 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "./helpers/utilitiesBS";
+
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@400;700&display=swap');
-@import './layout/index.scss'
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "./layout/grid.scss";
+@import './layout/base.scss';
+@import "./pages/layout.scss";
+@import "./pages/index";
+@import "./pages/introduce";
+

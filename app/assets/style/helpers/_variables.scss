@@ -46,6 +46,8 @@ $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
+
+$like-blue: #0f31ba !default; //自己增加的顏色
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -62,19 +64,21 @@ $colors: (
   "cyan":       $cyan,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-800,
 ) !default;
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
+$primary:        #62DB54; // $blue !default;
+$secondary:     #09ACF5;//$gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$light:         #1c1c1c;//$gray-100 !default;
+$dark:          #2d2d2d;//$gray-900 !default;
+
+$likes:         $like-blue !default; //自己增加的顏色 命名
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -86,7 +90,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "like-blue":      $likes  //自己增加的顏色調用名稱測試
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -250,11 +255,13 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25,   //4px
+  2: $spacer * .5,    //8px
+  3: $spacer,         //16px
+  4: $spacer * 1.5,   //24px
+  5: $spacer * 2,      //32px
+  6: $spacer * 3,     //48px
+  7: $spacer * 5,     //80px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -285,7 +292,7 @@ $body-text-align:           null !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
+$link-color:                             $white ;// $primary !default;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
@@ -309,9 +316,9 @@ $paragraph-margin-bottom:   1rem !default;
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
+  sm: 576px,//手機
   md: 768px,
-  lg: 992px,
+  lg: 992px,//平板
   xl: 1200px,
   xxl: 1400px
 ) !default;
@@ -364,7 +371,8 @@ $border-widths: (
   2: 2px,
   3: 3px,
   4: 4px,
-  5: 5px
+  5: 5px,
+  6: 12px
 ) !default;
 
 $border-color:                $gray-300 !default;
@@ -373,8 +381,9 @@ $border-color:                $gray-300 !default;
 // scss-docs-start border-radius-variables
 $border-radius:               .25rem !default;
 $border-radius-sm:            .2rem !default;
-$border-radius-lg:            .3rem !default;
+$border-radius-lg:            .75rem !default;//.3rem !default;
 $border-radius-pill:          50rem !default;
+
 // scss-docs-end border-radius-variables
 
 // scss-docs-start box-shadow-variables
@@ -451,12 +460,17 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  0: $font-size-base * 3, //48px
+  1: $h1-font-size, //40px
+  2: $h2-font-size, //32px
+  3: $h3-font-size, //28px
+  4: $h4-font-size, //24px
+  5: $font-size-base * 1.375, // 22px
+  6: $h5-font-size,   //16px
+  7: $font-size-base * 1.125, // 18px
+  8: $font-size-base * 0.875, // 14px
+  9: $font-size-base * 0.75, // 12px
+  80:$font-size-base * 5, //80px
 ) !default;
 // scss-docs-end font-sizes
 
@@ -1085,7 +1099,7 @@ $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
+$card-border-radius:                $border-radius-lg !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
