@@ -12870,7 +12870,7 @@ ul {
 
 .picturearea {
   height: 236px;
-  background-image: url(../../../assets/images/info01.jpg);
+  background-image: url(./assets/images/info01.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12884,7 +12884,7 @@ ul {
 
 .picturearea2 {
   height: 236px;
-  background-image: url(../../../assets/images/info02.jpg);
+  background-image: url(./assets/images/info02.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12898,7 +12898,7 @@ ul {
 
 .picturearea3 {
   height: 236px;
-  background-image: url(../../../assets/images/info03.jpg);
+  background-image: url(./assets/images/info03.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12912,7 +12912,7 @@ ul {
 
 .picturearea4 {
   height: 236px;
-  background-image: url(../../../assets/images/info04.jpg);
+  background-image: url(./assets/images/info04.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
